@@ -43,7 +43,7 @@ function displayStations() {
   stationsContainer.appendChild(showAllButton);
 }
 
-// Function to calculate time difference in minutes
+// Function to calculate time difference in hours and minutes
 function getTimeDifference(currentTime, busTime) {
   const [currentHours, currentMinutes] = currentTime.split(':').map(Number);
   const [busHours, busMinutes] = busTime.split(':').map(Number);
@@ -51,7 +51,13 @@ function getTimeDifference(currentTime, busTime) {
   const currentTotalMinutes = currentHours * 60 + currentMinutes;
   const busTotalMinutes = busHours * 60 + busMinutes;
 
-  return busTotalMinutes - currentTotalMinutes;
+  const diffMinutes = busTotalMinutes - currentTotalMinutes;
+
+  // Calculate hours and minutes
+  const hours = Math.floor(diffMinutes / 60);
+  const minutes = diffMinutes % 60;
+
+  return `${hours > 0 ? `${hours} час${hours > 1 ? 'а' : ''} ` : ''}${minutes} `;
 }
 
 // Function to display the schedule
