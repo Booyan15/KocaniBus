@@ -1,14 +1,14 @@
 // Sample data
 const busSchedule = [
   { bus: 'ТАСИМ КОМПАНИ', station: 'ОРИЗАРИ', area: 'РЕКА', time: '19:30' },
-  { bus: '102', station: 'АТОМСКИ', area: 'centar', time: '16:00' },
-  { bus: '103', station: 'УСОВА ЧЕШМА', area: 'main square', time: '19:15' },
-  { bus: '104', station: 'АВТОБУСКА', area: 'east park', time: '19:45' },
-  { bus: '105', station: 'ПОШТА', area: 'south terminal', time: '19:45' },
-  { bus: '106', station: 'ХОТЕЛ ЛЕДЕР', area: 'north gate', time: '19:50' },
-  { bus: '106', station: 'ПЛОШТАД', area: 'north gate', time: '19:45' },
-  { bus: '106', station: 'БАВЧАЛУК', area: 'north gate', time: '19:45' },
-  { bus: '106', station: 'БОЛНИЦА', area: 'north gate', time: '19:45' },
+  { bus: '102', station: 'АТОМСКИ', area: 'Руен', time: '16:00' },
+  { bus: '103', station: 'УСОВА ЧЕШМА', area: 'Такси Ројал', time: '20:15' },
+  { bus: '104', station: 'АВТОБУСКА', area: 'Пазарче', time: '22:45' },
+  { bus: '105', station: 'ПОШТА', area: 'Пошта', time: '20:45' },
+  { bus: '106', station: 'ХОТЕЛ ЛЕДЕР', area: 'Хотел Ледер', time: '22:50' },
+  { bus: '106', station: 'ПЛОШТАД', area: 'Собрание', time: '20:15' },
+  { bus: '106', station: 'БАВЧАЛУК', area: 'Мост', time: '21:00' },
+  { bus: '106', station: 'БОЛНИЦА', area: 'Маркет Кај Тоше', time: '21:45' },
 ];
 
 // Get unique stations from the schedule
