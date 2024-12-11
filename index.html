@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1165/1165998.png" type="image/x-icon">
+  <meta name="keywords" content="Kocani, avtobus, prevoz">
+  <meta name="author" content="Bojan Popovski">
+  <title>ГРАДСКИ ПРЕВОЗ КОЧАНИ</title>
+  <meta name="description" content="Апликацијата е изарботена за олеснување на граѓаните на Кочани за преглед на автобуските линии. Оваа алатка е изработена од млад тинејџер Бојан Поповски">
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff3cd; /* Light yellow background */
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #ffc107; /* Yellow header */
+      margin: 0;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .logo {
+      width: 50px; /* Adjust the size */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Space between logo and text */
+    }
+
+    .stations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .station-btn {
+      padding: 10px 20px;
+      background-color: #dc3545; /* Red button */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .station-btn:hover {
+      background-color: #b52d39;
+      transform: scale(1.1);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #dc3545;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+
+    footer {
+      background-color: #ffc107;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <img src="https://kocani.gov.mk/wp-content/uploads/2019/05/768px-Coat_of_arms_of_Ko%C4%8Dani_Municipality.svg_.png" alt="Logo" class="logo">
+    ГРАДСКИ ПРЕВОЗ КОЧАНИ
+  </h1>
+
+  <div class="stations" id="stations"></div>
+
+  <div class="cards" id="schedule"></div>
+
+  <footer>
+    <p>Изработено од Бојан Поповски</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
